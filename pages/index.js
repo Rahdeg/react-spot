@@ -23,7 +23,7 @@ export default function Home() {
       <AddPostModal />
       <div className="min-h-screen flex flex-col ">
         <Header />
-        <div className="px-10 bg-[#FCF5E5]">
+        <div className="px-4 md:px-10 bg-[#FCF5E5]">
           <Profile />
           <Gallery />
           <Footer />
