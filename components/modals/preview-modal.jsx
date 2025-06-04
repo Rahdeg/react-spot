@@ -1,6 +1,3 @@
-// components/modals/ImagePreviewModal.jsx
-"use client";
-
 import React, { useEffect, useRef } from "react";
 
 import { X } from "lucide-react";
@@ -36,7 +33,7 @@ const ImagePreviewModal = () => {
       >
         <button
           onClick={closeModal}
-          className="absolute top-3 right-3 z-10 text-black hover:text-red-600"
+          className="absolute top-3 right-3 z-10 text-white hover:text-red-600"
         >
           <X size={24} />
         </button>

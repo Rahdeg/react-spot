@@ -5,7 +5,7 @@ const Header = () => {
     <header className="bg-white  p-2 text-center">
       <h1 className="text-2xl font-semibold tracking-widest text-black">
         <img
-          src="./assets/group 13.png"
+          src="./assets/spot.svg"
           alt="Spots Logo"
           className="inline-block h-4  mr-2"
         />

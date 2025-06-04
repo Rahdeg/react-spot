@@ -1,4 +1,3 @@
-// stores/useModalStore.js
 import { create } from "zustand";
 
 const useModalStore = create((set) => ({

@@ -1,10 +1,7 @@
-"use client";
-
 import { useRef, useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 
-import { z } from "zod";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   FormControl,
@@ -79,14 +76,14 @@ export const EditProfileForm = ({ onCancel, initialValues }) => {
   };
 
   return (
-    <Card className=" w-full h-full border-none shadow-none">
-      <CardHeader className=" flex p-7">
+    <Card className=" w-full h-full border-none shadow-none  ">
+      <CardHeader className=" flex py-3 px-7">
         <CardTitle className=" text-xl font-bold">Update Profile</CardTitle>
       </CardHeader>
       <div className=" px-7">
         <DottedSeparator />
       </div>
-      <CardContent className=" p-7">
+      <CardContent className=" px-7 py-3">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)}>
             <div className=" flex flex-col gap-y-5">

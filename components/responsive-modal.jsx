@@ -8,7 +8,7 @@ export const ResponsiveModal = ({ children, open, onOpenChange }) => {
     return (
       <Dialog open={open} onOpenChange={onOpenChange}>
         <DialogTitle></DialogTitle>
-        <DialogContent className=" w-full sm:max-w-lg p-0 border-none overflow-y-auto hide-scrollbar max-h-[85vh]">
+        <DialogContent className=" w-full sm:max-w-lg p-0 border-none rounded-2xl overflow-y-auto scrollbar-none max-h-[85vh]">
           {children}
         </DialogContent>
       </Dialog>
@@ -17,7 +17,7 @@ export const ResponsiveModal = ({ children, open, onOpenChange }) => {
   return (
     <Drawer open={open} onOpenChange={onOpenChange}>
       <DrawerContent>
-        <div className=" overflow-y-auto hide-scrollbar max-h-[85vh]">
+        <div className=" overflow-y-auto  scrollbar-none max-h-[85vh]">
           {children}
         </div>
       </DrawerContent>

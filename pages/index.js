@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins } from "next/font/google";
 import Header from "@/components/header";
 import Profile from "@/components/profile";
 import Gallery from "@/components/gallery";
@@ -8,20 +7,16 @@ import { EditProfileModal } from "@/components/modals/edit-profile-modal";
 import { Toaster } from "sonner";
 import { AddPostModal } from "@/components/modals/add-post-modal";
 import ImagePreviewModal from "@/components/modals/preview-modal";
+import { cn } from "@/lib/utils";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div className={cn("bg-white", poppins.className)}>
       <Toaster />
       <ImagePreviewModal />
       <EditProfileModal />
